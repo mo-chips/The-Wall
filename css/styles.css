@@ -1,0 +1,324 @@
+/*
+   ----Pallette
+ CSS HEX 
+--black-bean: #330f0aff;
+--dark-slate-gray: #394f49ff;
+--fern-green: #65743aff;
+--flax: #efdd8dff;
+--mindaro: #f4fdafff
+424124
+
+
+/* GLOBAL STYLES
+-------------------------------------------------------------------------------------------------------------------*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+
+
+}
+
+body {
+    background: #394f49ff;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 p {
+    margin: 0;
+}
+
+header {
+    background: #330f0aff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 0 0;
+    box-shadow: 0 2px 8px #0a210fff;
+}
+
+.logo-title {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header img {
+    height: 80px;
+    max-width: 100%;
+    display: block;
+}
+
+header h1 {
+    padding: 20px 10px 0 0;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    margin: 0 0 0 10px;
+    padding: 0;
+    display: flex;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+header ul li a:hover {
+    background: #394f49ff;
+    color: #330f0aff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    color: #efdd8dff;
+    min-height: 550px;
+}
+
+button {
+    background: #424124;
+    width: 8%;
+    height: 3rem;
+    border-radius: 50px;
+    color: white;
+}
+
+button:hover,
+.note button:hover {
+    background-color: #394f49ff;
+}
+
+.active {
+    background: #394f49ff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 2px 4px #424124
+}
+
+footer {
+    background-color: #0a210fff;
+    color: white;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px #424124;
+    height: 5%;
+    padding: 2px;
+}
+
+/* NOTES STYLES
+-------------------------------------------------------------------------------------------------------------------*/
+
+.btnMain,
+.btnMainTasks {
+    padding: 10px 20px;
+    font-size: 1rem;
+    width: auto;
+    min-width: 160px;
+    border: none;
+    cursor: pointer;
+}
+
+.wrapper {
+    background: #65743aff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px #f4fdafff;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+.createPage {
+    box-shadow: 0 2px 8px #330f0aff;
+    background: #330f0aff;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+.createPage label {
+    padding-bottom: 10px;
+}
+
+.createPage h2 {
+    padding: 10px;
+}
+
+
+.createNoteForm {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+textarea {
+    min-height: 300px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background: #acd2edff;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+/*
+.createNoteForm button {
+    margin-top: auto;
+    width: 100%;
+}
+*/
+
+
+.notes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.note {
+    color: black;
+    background: #acd2edff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0a210fff;
+}
+
+.note p {
+    margin-left: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.note small {
+    color: #0a210fff;
+}
+
+.note div {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.note button {
+    min-width: 100px;
+    height: 55px;
+    background: #424124;
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+/*
+   ----Pallette
+ CSS HEX 
+--black-bean: #330f0aff;
+--dark-slate-gray: #394f49ff;
+--fern-green: #65743aff;
+--flax: #efdd8dff;
+--mindaro: #f4fdafff
+
+/* TASKS STYLES
+-------------------------------------------------------------------------------------------------------------------*/
+.tasks {
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.tasks form {
+    background: #394f49ff;
+    border-radius: 10px;
+    color: #acd2edff;
+    padding: 10px;
+    height: 100%;
+    max-width: 900px;
+    box-shadow: 0 2px 8px #14591dff;
+}
+
+.taskItem {
+    padding: 5px;
+    box-shadow: 0 2px 8px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-shadow: 0 2px 8px #14591dff;
+
+}
+
+.taskItem div {
+    margin-left: 1%;
+    padding-left: 5%;
+    max-width: 100%;
+    flex: 1;
+    height: auto;
+}
+
+.taskItem div p {
+    overflow-wrap: break-word;
+}
+
+input[type="checkbox"] {
+    width: 3%;
+}
+
+.taskDates {
+    font-size: 0.9rem;
+}
+
+
+.taskItem button {
+    margin: 2%;
+    min-width: 50px;
+    border-radius: 50px;
+}
