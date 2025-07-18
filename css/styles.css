@@ -14,6 +14,7 @@
 
 html {
     box-sizing: border-box;
+    height: 100%;
 }
 
 *,
@@ -24,18 +25,20 @@ html {
 
 html,
 body {
-    height: 100%;
-
-
+    margin: 0;
+    padding: 0;
+    height: auto;
+    min-height: 100%;
 }
 
 body {
     background: #394f49ff;
-    margin: 0;
     font-family: sans-serif;
     font-size: 1.2rem;
-    padding: 0;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h1,
@@ -104,6 +107,7 @@ header ul li a:hover {
 }
 
 main {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,7 +115,6 @@ main {
     padding: 20px;
     width: 100%;
     color: #efdd8dff;
-    min-height: 550px;
 }
 
 button {
@@ -137,10 +140,10 @@ button:hover,
 footer {
     background-color: #0a210fff;
     color: white;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     box-shadow: 0 2px 8px #424124;
-    height: 5%;
-    padding: 2px;
+    min-height: 10px;
+    margin-top: auto;
 }
 
 /* NOTES STYLES
@@ -171,6 +174,8 @@ footer {
     background: #330f0aff;
     padding: 10px;
     border-radius: 20px;
+    width: 400px;
+    height: 570px;
 }
 
 
@@ -193,19 +198,20 @@ footer {
 
 textarea {
     min-height: 300px;
+    width: 100%;
     border-radius: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     background: #acd2edff;
     font-size: 1rem;
     padding: 10px;
 }
 
-/*
+
 .createNoteForm button {
-    margin-top: auto;
+    margin-bottom: 5px;
     width: 100%;
 }
-*/
+
 
 
 .notes {
@@ -255,6 +261,10 @@ textarea {
     color: white;
     padding: 5px;
     margin-top: 10px;
+}
+
+.taskDate {
+    margin-bottom: 10px;
 }
 
 /*
