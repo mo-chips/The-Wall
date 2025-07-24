@@ -168,7 +168,6 @@ footer {
     max-width: 1200px;
 }
 
-
 .createPage {
     box-shadow: 0 2px 8px #330f0aff;
     background: #330f0aff;
@@ -178,6 +177,14 @@ footer {
     height: 570px;
 }
 
+@media (max-width: 600px) {
+    .createPage {
+        width: 100%;
+        min-width: unset;
+        height: auto;
+        border-radius: 0;
+    }
+}
 
 .createPage label {
     padding-bottom: 10px;
@@ -325,7 +332,6 @@ input[type="checkbox"] {
 .taskDates {
     font-size: 0.9rem;
 }
-
 
 .taskItem button {
     margin: 2%;
